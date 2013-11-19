@@ -1,4 +1,4 @@
-CXX		 = g++
+CXX	= g++
 DEBUG    = -g
 CXXFLAGS = $(shell fltk-config --cxxflags ) -std=c++11 -I.
 LDFLAGS  = $(shell fltk-config --ldflags )
@@ -17,8 +17,6 @@ animals: animals.cpp
 ibutton: ibutton.cpp
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) ibutton.cpp -o ibutton
 
-	
 clean: 
 	rm -f *.o 2> /dev/null
 	rm -f ibutton animals
-        
